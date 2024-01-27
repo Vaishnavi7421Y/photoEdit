@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="photoclicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6H0-k6-2Ph">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXc-Q5-6rS">
+                                <rect key="frame" x="286.66666666666669" y="749.33333333333337" width="55.666666666666686" height="35"/>
+                                <color key="backgroundColor" red="0.53770723470000004" green="0.76942896839999997" blue="0.42980191159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="viewFlipsideBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
+                                <connections>
+                                    <action selector="openCameraActio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5D-4b-jKS"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WFF-kd-iBH">
+                                <rect key="frame" x="5" y="64" width="383" height="670.33333333333337"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oa4-tO-aWx">
+                                <rect key="frame" x="55.666666666666657" y="749.33333333333337" width="46" height="35"/>
+                                <color key="backgroundColor" red="0.53770723470000004" green="0.76942896839999997" blue="0.42980191159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil.slash" catalog="system"/>
+                                <connections>
+                                    <action selector="editImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXY-5r-e64"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CF-x3-dwI">
+                                <rect key="frame" x="172.33333333333334" y="749.33333333333337" width="48.333333333333343" height="35"/>
+                                <color key="backgroundColor" red="0.53770723470000004" green="0.76942896839999997" blue="0.42980191159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="shareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kco-c3-Suf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RrF-os-T4S"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0CF-x3-dwI" firstAttribute="top" secondItem="oa4-tO-aWx" secondAttribute="top" id="9g3-U1-FRm"/>
+                            <constraint firstItem="WFF-kd-iBH" firstAttribute="leading" secondItem="RrF-os-T4S" secondAttribute="leading" constant="5" id="BSF-wc-3ht"/>
+                            <constraint firstItem="0CF-x3-dwI" firstAttribute="centerX" secondItem="6H0-k6-2Ph" secondAttribute="centerX" id="HWQ-JG-E2E"/>
+                            <constraint firstItem="RrF-os-T4S" firstAttribute="trailing" secondItem="WFF-kd-iBH" secondAttribute="trailing" constant="5" id="NEx-1M-utL"/>
+                            <constraint firstItem="BXc-Q5-6rS" firstAttribute="centerX" secondItem="6H0-k6-2Ph" secondAttribute="centerX" multiplier="1.6" id="WVl-fN-YDN"/>
+                            <constraint firstItem="0CF-x3-dwI" firstAttribute="bottom" secondItem="oa4-tO-aWx" secondAttribute="bottom" id="cJh-d6-f31"/>
+                            <constraint firstItem="WFF-kd-iBH" firstAttribute="top" secondItem="RrF-os-T4S" secondAttribute="top" constant="5" id="fNW-rT-Y4a"/>
+                            <constraint firstItem="BXc-Q5-6rS" firstAttribute="top" secondItem="WFF-kd-iBH" secondAttribute="bottom" constant="15" id="fxg-FX-ijZ"/>
+                            <constraint firstItem="oa4-tO-aWx" firstAttribute="top" secondItem="BXc-Q5-6rS" secondAttribute="top" id="gpB-Ap-iyd"/>
+                            <constraint firstItem="oa4-tO-aWx" firstAttribute="bottom" secondItem="BXc-Q5-6rS" secondAttribute="bottom" id="jGw-eg-nxJ"/>
+                            <constraint firstItem="oa4-tO-aWx" firstAttribute="centerX" secondItem="6H0-k6-2Ph" secondAttribute="centerX" multiplier="0.4" id="uJV-kH-R6D"/>
+                            <constraint firstItem="BXc-Q5-6rS" firstAttribute="centerY" secondItem="6H0-k6-2Ph" secondAttribute="centerY" multiplier="1.8" id="xr0-Se-Fyb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editImageButton" destination="oa4-tO-aWx" id="EYM-Qw-zxp"/>
+                        <outlet property="imagePickerView" destination="WFF-kd-iBH" id="Uk4-CS-UIe"/>
+                        <outlet property="openCameraButton" destination="BXc-Q5-6rS" id="M3V-Cj-GNH"/>
+                        <outlet property="shareButton" destination="0CF-x3-dwI" id="VdM-Vg-az8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="pencil.slash" catalog="system" width="128" height="120"/>
+        <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
